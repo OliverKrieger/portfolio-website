@@ -1,0 +1,29 @@
+// src/index.scss
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: $primary-color;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 15px;
+  background-color: $secondary-color;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
