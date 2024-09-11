@@ -1,0 +1,30 @@
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav ul li button:hover {
+    background-color: #2980b9;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+button.active {
+    background-color: #2ecc71;
+}
