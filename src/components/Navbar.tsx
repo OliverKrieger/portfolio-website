@@ -1,47 +1,29 @@
 import React from 'react';
+import TabButton from './TabButton'; // Import the new TabButton component
 
 interface NavbarProps {
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
+    activeTab: string;
+    setActiveTab: (tab: string) => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
-  return (
-    <nav className="flex justify-center">
-      <ul className="flex space-x-4">
-        <li>
-          <button
-            className={`${
-              activeTab === 'home' ? 'bg-green-500' : 'bg-blue-500'
-            } text-white px-4 py-2 rounded`}
-            onClick={() => setActiveTab('home')}
-          >
-            Home
-          </button>
-        </li>
-        <li>
-          <button
-            className={`${
-              activeTab === 'about' ? 'bg-green-500' : 'bg-blue-500'
-            } text-white px-4 py-2 rounded`}
-            onClick={() => setActiveTab('about')}
-          >
-            About
-          </button>
-        </li>
-        <li>
-          <button
-            className={`${
-              activeTab === 'contact' ? 'bg-green-500' : 'bg-blue-500'
-            } text-white px-4 py-2 rounded`}
-            onClick={() => setActiveTab('contact')}
-          >
-            Contact
-          </button>
-        </li>
-      </ul>
-    </nav>
-  );
+    const tabs = ['home', 'about', 'contact']; // Define tab labels
+
+    return (
+        <nav>
+            <ul className="flex space-x-4">
+                {tabs.map((tab) => (
+                    <li key={tab}>
+                        <TabButton
+                            label={tab.charAt(0).toUpperCase() + tab.slice(1)} // Capitalize first letter
+                            active={activeTab === tab}
+                            onClick={() => setActiveTab(tab)} // Set the active tab on click
+                        />
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    );
 };
 
 export default Navbar;
