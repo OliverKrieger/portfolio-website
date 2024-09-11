@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+# Site Settings
+
+URL: https://oliverkrieger.github.io/protfolio-website/
