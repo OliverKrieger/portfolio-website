@@ -1,14 +1,38 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 
-const Navbar: React.FC = () => {
-    return (
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-            </ul>
-        </nav>
-    );
-};
+interface NavbarProps {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <button 
+            className={activeTab === 'home' ? 'active' : ''}
+            onClick={() => setActiveTab('home')}>
+            Home
+          </button>
+        </li>
+        <li>
+          <button 
+            className={activeTab === 'about' ? 'active' : ''}
+            onClick={() => setActiveTab('about')}>
+            About
+          </button>
+        </li>
+        <li>
+          <button 
+            className={activeTab === 'contact' ? 'active' : ''}
+            onClick={() => setActiveTab('contact')}>
+            Contact
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
 
 export default Navbar;

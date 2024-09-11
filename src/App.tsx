@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
 import './styles/main.scss';
 
 function App() {
@@ -23,31 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li>
-            <button
-              className={activeTab === 'home' ? 'active' : ''}
-              onClick={() => setActiveTab('home')}>
-              Home
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeTab === 'about' ? 'active' : ''}
-              onClick={() => setActiveTab('about')}>
-              About
-            </button>
-          </li>
-          <li>
-            <button
-              className={activeTab === 'contact' ? 'active' : ''}
-              onClick={() => setActiveTab('contact')}>
-              Contact
-            </button>
-          </li>
-        </ul>
-      </nav>
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="content">{renderPage()}</div>
     </div>
   );
