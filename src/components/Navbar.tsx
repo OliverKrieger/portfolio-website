@@ -10,7 +10,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
     const tabs = ['home', 'about', 'contact']; // Define tab labels
 
     return (
-        <nav>
+        <nav className="flex justify-center">
             <ul className="flex space-x-4">
                 {tabs.map((tab) => (
                     <li key={tab}>
