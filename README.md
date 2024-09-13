@@ -51,3 +51,8 @@ export default tseslint.config({
 # Site Settings
 
 URL: https://oliverkrieger.github.io/portfolio-website/
+
+# External Sources
+
+SVG Visualiser: https://www.svgviewer.dev/
+Tailwind Colour Generator: https://uicolors.app/create

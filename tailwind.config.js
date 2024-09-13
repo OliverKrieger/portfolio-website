@@ -15,6 +15,21 @@ export default {
       animation: {
         slideInLeft: 'slideInLeft 0.5s ease-out',
       },
+      colors: {
+        bisque: {
+          50: '#fcfaf5',
+          100: '#fff8e7',
+          200: '#ffead1',
+          300: '#ffe4c4',
+          400: '#e3ad94',
+          500: '#d19477',
+          600: '#bf8163',
+          700: '#612a18',
+          800: '#593010',
+          900: '#111318',
+          950: '#050608',
+        },
+      }
     },
   },
   plugins: [],
