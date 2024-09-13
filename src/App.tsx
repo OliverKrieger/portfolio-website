@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App bg-bisque-900 text-bisque-100 p-6">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="content">{renderPage()}</div>
     </div>

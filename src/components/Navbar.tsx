@@ -11,7 +11,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
     return (
         <nav className="flex justify-center">
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-4 p-4 .. border-solid border-2 rounded-full border-bisque-500 ...">
                 {tabs.map((tab) => (
                     <li key={tab}>
                         <TabButton
