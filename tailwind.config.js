@@ -29,7 +29,10 @@ export default {
           900: '#111318',
           950: '#050608',
         },
-      }
+      },
+      fontFamily: {
+        verdana: ['Verdana', 'sans-serif'],
+      },
     },
   },
   plugins: [],

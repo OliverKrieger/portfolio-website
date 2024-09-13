@@ -1,7 +1,22 @@
-html, body, #root, .App{
+html,
+body,
+#root,
+.App {
     height: 100vh;
 }
 
 .content {
     margin-top: 20px;
+}
+
+.text-stroke {
+    -webkit-text-stroke: .25px rgb(216, 201, 179);
+    /* Adjust the width and color as needed */
+    color: white;
+    /* Set the text color */
+}
+
+.custom-shadow-white {
+    text-shadow: 0 5px 0px rgba(255, 255, 255, 0.25);
+    /* Blue shadow */
 }
