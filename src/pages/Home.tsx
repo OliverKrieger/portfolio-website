@@ -2,9 +2,9 @@ import Logo from '../components/Logo';
 
 const Home: React.FC = () => {
     return (
-        <div className="grid grid-cols-1 gap-4 place-content-stretch h-48 ... animate-slideInLeft">
-            <div className='home-container'>
-                <div className='logo-container'>
+        <div className="animate-slideInLeft h-full ...">
+            <div className='home-container flex flex-col justify-center text-center ... h-full ... -mt-8'>
+                <div className='logo-container flex justify-center'>
                     <Logo width_val={312} height_val={312}/>
                 </div>
                 <div className='content-container'>
