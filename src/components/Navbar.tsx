@@ -7,7 +7,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
-    const tabs = ['home', 'about', 'contact']; // Define tab labels
+    const tabs = ['home', 'about', 'portfolio', 'contact']; // Define tab labels
 
     return (
         <nav className="flex justify-center">
