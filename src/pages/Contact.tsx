@@ -10,6 +10,8 @@ import AvatarImg from '../assets/Avatar.jpg';
 import LinkIconButton from '../components/LinkIconButton';
 import IconCard from '../components/IconCard';
 
+import CV from '../assets/cv/Oliver Krieger CV.pdf'
+
 const Contact = () => {
     return (
         <div className="flex justify-center animate-slideInLeft">
@@ -28,12 +30,12 @@ const Contact = () => {
                     <IconCard Icon={PhoneIcon} header='Mobile' message='+44 (0) 7754774679' />
                     <IconCard Icon={LocationIcon} header='Location' message='Surrey, United Kingdom' />
                 </div>
-                <button className='bg-bisque-500 ... p-2 ... m-1 ... rounded ... hover:bg-bisque-700 ... transition duration-150 ease-in-out ...'>
+                <a href={CV} download="Oliver Krieger CV" target="_blank" rel="noopener noreferrer" className='bg-bisque-500 ... p-2 ... m-1 ... rounded ... hover:bg-bisque-700 ... transition duration-150 ease-in-out ...'>
                     <div className='flex justify-center'>
                         <DownloadIcon className="w-6 h-6 text-bisque-100" />
                         <span className='pr-2'>Download CV</span>
                     </div>
-                </button>
+                </a>
             </div>
         </div>
     );
