@@ -14,8 +14,8 @@ const Contact = () => {
     return (
         <div className="flex justify-center animate-slideInLeft">
             <div className="flex flex-col text-center ... bg-bisque-825 p-4 rounded">
-                <div className='w-52 h-52 rounded-xl overflow-hidden mx-auto mb-5'>
-                    <img src={AvatarImg} />
+                <div className='w-52 h-52 rounded-xl overflow-hidden mx-auto mb-5 relative'>
+                    <img className='absolute top-12 left-1/2 transform -translate-x-1/2 scale-150' src={AvatarImg} />
                 </div>
                 <h2 className="text-xl ... font-bold ... tracking-[.1em] ...">Oliver Krieger</h2>
                 <h3 className='text-sm text-slate-400 my-3'>Software Developer</h3>
