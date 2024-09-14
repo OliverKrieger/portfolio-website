@@ -1,19 +1,50 @@
+import TwoColumnBanner from "../components/TwoColumnBanner";
+
 const About: React.FC = () => {
     return (
         <div className="text-center animate-slideInLeft">
-            <h1>About Page</h1>
-            <div className="rounded-lg bg-bisque-850 max-w-screen-lg mx-auto ">
-                <div className="p-4 flex justify-center text-center">
-                    <div className="flex flex-col justify-center flex-1 border-r border-gray-300 p-6 relative">
-                        <h2 className="text-xl font-semibold">Left Column</h2>
-                        <p>Content for the left column. This column has a right border.</p>
-                        <div className="w-5 h-5 bg-bisque-500 rounded-full absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2"></div>
-                        <div className="w-3 h-3 bg-bisque-100 rounded-full absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2"></div>
-                    </div>
-                    <div className="flex flex-col justify-center flex-1 p-6">
-                        <h2 className="text-xl font-semibold">Right Column</h2>
-                        <p>Content for the right column. This column will grow as needed to match the height of the left column.</p>
-                    </div>
+            <div className="rounded-lg bg-bisque-850 max-w-screen-lg mx-auto p-4">
+                <div className="experience-container">
+                    <h2 className="text-2xl uppercase text-bisque-300 pb-4">Experience</h2>
+                    <TwoColumnBanner
+                        leftHeader=""
+                        leftText="September 2022 - September 2023"
+                        rightHeader="Sony | Professional Europe"
+                        rightText="Software Developer Placement, Basingstoke"
+                    />
+                    <TwoColumnBanner
+                        leftHeader=""
+                        leftText="January 2018 - August 2020"
+                        rightHeader="Figment Productions"
+                        rightText="Software Developer, Guildford, Surrey"
+                    />
+                    <TwoColumnBanner
+                        leftHeader=""
+                        leftText="December 2017 - January 2018"
+                        rightHeader="KYE Creations"
+                        rightText="Technical Artist"
+                    />
+                    <TwoColumnBanner
+                        leftHeader=""
+                        leftText="June 2015 - June 2016"
+                        rightHeader="Sagittarius Marketing"
+                        rightText="Front End Web Developer Intern, Ashford, Kent"
+                    />
+                </div>
+                <div className="education-container">
+                    <h2 className="text-2xl uppercase text-bisque-300 py-4">Education</h2>
+                    <TwoColumnBanner
+                        leftHeader=""
+                        leftText="September 2020 - July 2024"
+                        rightHeader="University of Surrey"
+                        rightText="BSc (Hons) Computer Science, Guildford, Surrey"
+                    />
+                    <TwoColumnBanner
+                        leftHeader=""
+                        leftText="September 2013 - July 2017"
+                        rightHeader="University of Kent"
+                        rightText="BSc (Hons) Multimedia Technology and Design with Year in Industry, Canterbury, Kent"
+                    />
                 </div>
             </div>
         </div>
