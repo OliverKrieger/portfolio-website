@@ -5,7 +5,7 @@ const About: React.FC = () => {
         <div className="text-center animate-slideInLeft">
             <div className="rounded-lg bg-bisque-850 max-w-screen-lg mx-auto p-4">
                 <div className="experience-container">
-                    <h2 className="text-2xl uppercase text-bisque-300 pb-4">Experience</h2>
+                    <h2 className="text-2xl uppercase text-bisque-300 pb-0 md:pb-4">Experience</h2>
                     <TwoColumnBanner
                         leftText="September 2022 - September 2023"
                         rightHeader="Sony | Professional Europe"
@@ -31,7 +31,7 @@ const About: React.FC = () => {
                     />
                 </div>
                 <div className="education-container">
-                    <h2 className="text-2xl uppercase text-bisque-300 py-4">Education</h2>
+                    <h2 className="text-2xl uppercase text-bisque-300 pt-4 pb-0 md:py-4">Education</h2>
                     <TwoColumnBanner
                         leftText="September 2020 - July 2024"
                         rightHeader="University of Surrey"
@@ -41,7 +41,7 @@ const About: React.FC = () => {
                     <TwoColumnBanner
                         leftText="September 2013 - July 2017"
                         rightHeader="University of Kent"
-                        rightText="BSc (Hons) Multimedia Technology and Design with Year in Industry"
+                        rightText="BSc (Hons) Multimedia Technology and Design"
                         rightSubText="Canterbury, Kent"
                     />
                 </div>
