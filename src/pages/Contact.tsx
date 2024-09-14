@@ -1,26 +1,32 @@
-import LinkedInIcon from '../assets/icons/i_linkin.svg?react'
-import EmailIcon from '../assets/icons/i_email.svg?react'
-import GithubIcon from '../assets/icons/i_github.svg?react'
-import LocationIcon from '../assets/icons/i_location.svg?react'
-import PhoneIcon from '../assets/icons/i_phone.svg?react'
-import DownloadIcon from '../assets/icons/i_download.svg?react'
+import LinkedInIcon from '../assets/icons/i_linkin.svg?react';
+import EmailIcon from '../assets/icons/i_email.svg?react';
+import GithubIcon from '../assets/icons/i_github.svg?react';
+import LocationIcon from '../assets/icons/i_location.svg?react';
+import PhoneIcon from '../assets/icons/i_phone.svg?react';
+import DownloadIcon from '../assets/icons/i_download.svg?react';
 
-import LinkIconButton from '../components/LinkIconButton'
+import AvatarImg from '../assets/Avatar.jpg';
+
+import LinkIconButton from '../components/LinkIconButton';
+import IconCard from '../components/IconCard';
 
 const Contact = () => {
     return (
         <div className="flex justify-center animate-slideInLeft">
-            <div className="flex flex-col text-center ...">
-                <h2 className="text-lg font-bold">Oliver Krieger</h2>
-                <h3>Software Developer</h3>
+            <div className="flex flex-col text-center ... bg-bisque-825 p-4 rounded">
+                <div className='w-52 h-52 rounded-xl overflow-hidden mx-auto mb-5'>
+                    <img src={AvatarImg} />
+                </div>
+                <h2 className="text-xl ... font-bold ... tracking-[.1em] ...">Oliver Krieger</h2>
+                <h3 className='text-sm text-slate-400 my-3'>Software Developer</h3>
                 <div className="links-container">
                     <LinkIconButton Icon={LinkedInIcon} url="https://www.linkedin.com/in/oliver-krieger-080434a5/" linkClassName="bg-bisque-500 ... p-2 ... m-1 ... rounded ... hover:bg-bisque-700 ... transition duration-150 ease-in-out ..." className="text-bisque-100" target="_blank" rel="noopener noreferrer" />
                     <LinkIconButton Icon={GithubIcon} url="https://github.com/OliverKrieger" linkClassName="bg-bisque-500 ... p-2 ... m-1 ... rounded ... hover:bg-bisque-700 ... transition duration-150 ease-in-out ..." className="text-bisque-100" target="_blank" rel="noopener noreferrer" />
                 </div>
-                <div className="info-container">
-                    <EmailIcon className="w-6 h-6 text-bisque-500" />
-                    <LocationIcon className="w-6 h-6 text-bisque-500" />
-                    <PhoneIcon className="w-6 h-6 text-bisque-500" />
+                <div className="info-container bg-bisque-850 ... rounded ... p-2 ... my-4 ... divide-y">
+                    <IconCard Icon={EmailIcon} header='Email' message='oliver.krieger76@gmail.com' />
+                    <IconCard Icon={PhoneIcon} header='Mobile' message='+44 (0) 7754774679' />
+                    <IconCard Icon={LocationIcon} header='Location' message='Surrey, United Kingdom' />
                 </div>
                 <button className='bg-bisque-500 ... p-2 ... m-1 ... rounded ... hover:bg-bisque-700 ... transition duration-150 ease-in-out ...'>
                     <div className='flex justify-center'>
