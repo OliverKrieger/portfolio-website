@@ -22,7 +22,7 @@ const TwoColumnBanner: React.FC<TwoColumnBannerProps> = ({ leftHeader = '', left
             <div className="flex flex-col justify-center flex-1 p-6">
                 <h2 className="text-xl font-semibold text-bisque-300">{rightHeader}</h2>
                 <p>{rightText}</p>
-                <p>{rightSubText}</p>
+                <p className="text-slate-400">{rightSubText}</p>
             </div>
         </div>
     );
