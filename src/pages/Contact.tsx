@@ -15,7 +15,7 @@ import CV from '../assets/cv/Oliver Krieger CV.pdf'
 const Contact = () => {
     return (
         <div className="flex justify-center animate-slideInLeft">
-            <div className="flex flex-col text-center ... bg-bisque-825 p-4 rounded relative mt-32">
+            <div className="flex flex-col text-center ... bg-zinc-900 p-4 rounded relative mt-32">
                 <div className='w-52 h-52 rounded-xl overflow-hidden mx-auto mb-5 absolute -top-28 left-1/2 transform -translate-x-1/2'>
                     <img className='absolute top-12 left-1/2 transform -translate-x-1/2 scale-150' src={AvatarImg} />
                 </div>
