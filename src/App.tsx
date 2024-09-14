@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App bg-bisque-900 text-bisque-100 p-6 flex flex-col">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="content grow-[1]">{renderPage()}</div>
+      <div className="content grow-[1] content-center">{renderPage()}</div>
     </div>
   );
 }

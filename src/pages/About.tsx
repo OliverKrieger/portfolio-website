@@ -7,43 +7,42 @@ const About: React.FC = () => {
                 <div className="experience-container">
                     <h2 className="text-2xl uppercase text-bisque-300 pb-4">Experience</h2>
                     <TwoColumnBanner
-                        leftHeader=""
                         leftText="September 2022 - September 2023"
                         rightHeader="Sony | Professional Europe"
-                        rightText="Software Developer Placement, Basingstoke"
+                        rightText="Software Developer Placement"
+                        rightSubText="Basingstoke"
                     />
                     <TwoColumnBanner
-                        leftHeader=""
                         leftText="January 2018 - August 2020"
                         rightHeader="Figment Productions"
-                        rightText="Software Developer, Guildford, Surrey"
+                        rightText="Software Developer"
+                        rightSubText="Guildford, Surrey"
                     />
                     <TwoColumnBanner
-                        leftHeader=""
                         leftText="December 2017 - January 2018"
                         rightHeader="KYE Creations"
                         rightText="Technical Artist"
                     />
                     <TwoColumnBanner
-                        leftHeader=""
                         leftText="June 2015 - June 2016"
                         rightHeader="Sagittarius Marketing"
-                        rightText="Front End Web Developer Intern, Ashford, Kent"
+                        rightText="Front End Web Developer Intern"
+                        rightSubText="Ashford, Kent"
                     />
                 </div>
                 <div className="education-container">
                     <h2 className="text-2xl uppercase text-bisque-300 py-4">Education</h2>
                     <TwoColumnBanner
-                        leftHeader=""
                         leftText="September 2020 - July 2024"
                         rightHeader="University of Surrey"
-                        rightText="BSc (Hons) Computer Science, Guildford, Surrey"
+                        rightText="BSc (Hons) Computer Science"
+                        rightSubText="Guildford, Surrey"
                     />
                     <TwoColumnBanner
-                        leftHeader=""
                         leftText="September 2013 - July 2017"
                         rightHeader="University of Kent"
-                        rightText="BSc (Hons) Multimedia Technology and Design with Year in Industry, Canterbury, Kent"
+                        rightText="BSc (Hons) Multimedia Technology and Design with Year in Industry"
+                        rightSubText="Canterbury, Kent"
                     />
                 </div>
             </div>
