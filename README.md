@@ -50,6 +50,7 @@ export default tseslint.config({
 ```
 # Site Settings
 
+(For most icons you have to replace fill colour with "currentColor" for colour changes to apply!)
 URL: https://oliverkrieger.github.io/portfolio-website/
 
 # External Sources
