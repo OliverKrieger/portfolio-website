@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import Subjects from '../components/portfolio/Subjects';
 import Topics from '../components/portfolio/Topics';
 
+import CodeIcon from '../assets/icons/i_code.svg?react';
+import ProjectIcon from '../assets/icons/i_projects.svg?react';
+
 
 const Portfolio: React.FC = () => {
     const [activeSubject, setActiveSubject] = useState<string>('');
@@ -25,14 +28,8 @@ const Portfolio: React.FC = () => {
         <div className="animate-slideInLeft h-full">
             <div className="flex">
                 <div className="flex-none bg-slate-800 w-24">
-                    <p>Coding Languages (Split into Frontend, Backend, Unreal, Dev Ops, etc... then add languages underneath)</p>
-                    <p>
-                        Projects (Mainly Game reels, but also list projects / jobs and languages / skills used
-                        (placement and CUDA and Virtual production at sony?)). Maybe also upload Final Project?
-                    </p>
-                    <p>
-                        Check git over years as well
-                    </p>
+                    <CodeIcon className="w-12 h-12 text-bisque-500"/>
+                    <ProjectIcon className="w-12 h-12 text-bisque-500"/>
                 </div>
                 <div className="flex-1 bg-slate-400">
                     {renderPage()}
