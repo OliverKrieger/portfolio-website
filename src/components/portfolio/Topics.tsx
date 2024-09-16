@@ -29,7 +29,7 @@ const Topics: React.FC<TopicsProps> = ({activeSubject, setActiveSubject}) => {
 
     return (
         <div>
-            <button onClick={() => setActiveSubject("")}>Subjects</button>
+            <button className='bg-bisque-500 p-2 m-4 rounded hover:bg-bisque-700 transition duration-150 ease-in-out' onClick={() => setActiveSubject("")}>Subjects</button>
             {renderPage()}
         </div>
     );
