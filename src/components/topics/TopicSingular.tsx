@@ -1,16 +1,24 @@
 import React from "react";
 
 interface TopicSingularProps {
-    Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    Icons: React.FunctionComponent<React.SVGProps<SVGSVGElement>>[];
+    gridClassName?: string;
     title?: string;
     description?: string;
     list?: string[];
 }
 
-const TopicSingular: React.FC<TopicSingularProps> = ({ Icon, title = "", description = "", list = [] }) => {
+const TopicSingular: React.FC<TopicSingularProps> = ({ Icons, title = "", gridClassName= "", description = "", list = [] }) => {
     return (
         <div className="text-bisque-100 p-12">
-            <Icon className="w-24 h-24 text-bisque-500 m-auto" />
+            <div className={gridClassName}>
+                {Icons.map((Icon, index) => (
+                    <div key={index}>
+                        <Icon className="w-24 h-24 m-auto" />
+                    </div>
+                ))}
+            </div>
+            
             <h1 className="text-center text-xl uppercase py-6">{title}</h1>
             <p>{description}</p>
             <ul className="list-inside list-disc mt-6">

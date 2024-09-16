@@ -20,6 +20,7 @@ import JupyterNotebookIcon from '../../assets/icons_code/i_jnotebook.svg?react';
 import JavaScriptIcon from '../../assets/icons_code/i_js.svg?react';
 import NodeJSIcon from '../../assets/icons_code/i_node.svg?react';
 import NumpyIcon from '../../assets/icons_code/i_numpy.svg?react';
+import NuxtJSIcon from '../../assets/icons_code/i_nuxtjs.svg?react';
 import PiniaIcon from '../../assets/icons_code/i_pinia.svg?react';
 import PostgreSQLIcon from '../../assets/icons_code/i_postgresql.svg?react';
 import PrismaIcon from '../../assets/icons_code/i_prisma.svg?react';
@@ -35,8 +36,6 @@ import ViteIcon from '../../assets/icons_code/i_vite.svg?react';
 import VRIcon from '../../assets/icons_code/i_vr.svg?react';
 import VueJSIcon from '../../assets/icons_code/i_vue.svg?react';
 
-import TopicGames from '../topics/TopicGames';
-
 import { useOverlay } from '../OverlayContext';
 import TopicSingular from '../topics/TopicSingular';
 
@@ -49,24 +48,43 @@ const Subjects: React.FC<SubjectsProps> = ({}) => {
 
     return (
         <div className="animate-slideInLeft grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center h-full">
-            <SubjectCard Icon={UnrealIcon} iconClassName="w-12 h-12 text-white-100" subjectName='Unreal Engine' onClick={() => openOverlay(
-                <TopicSingular 
-                    Icon={UnrealIcon}
-                    title='Unreal Engine'
-                    description='I have used Unreal Engine for many years now, for both industry and personal projects. I become interested in the engnine when it became free in 2014, but did not fully begin working with it until 2016, after which I have been working with many companies while using it. I have used it for many different purposes, including:'
-                    list={[
-                        "Nearly 3 years at Figment Productions, working on immersive VR experiences for the company and for a BBC project",
-                        "1 year at Sony Europe for Virtual Production project, along with Playstation usage",
-                        "2 months with KYE for Jaws of Exctinction for technical art contract",
-                        "1 year in University of Kent for project Skyward Bound",
-                        "Using it in spare time for personal projects"
-                    ]}
-                />
-            )} />
-            <SubjectCard Icon={Games} subjectName='Video Game Development' onClick={() => openOverlay(<TopicGames />)} />
-            <SubjectCard Icon={Web} subjectName='Web Development' onClick={() => openOverlay(<TopicGames />)} />
-            <SubjectCard Icon={DevOps} subjectName='Dev Ops' onClick={() => openOverlay(<TopicGames />)} />
-            <SubjectCard Icon={AI} subjectName='Artificial Intelligence' onClick={() => openOverlay(<TopicGames />)} />
+            <SubjectCard 
+                Icons={[UnrealIcon]} 
+                iconClassName="w-12 h-12 text-white-100" 
+                subjectName='Unreal Engine' 
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[UnrealIcon]}
+                        title='Unreal Engine'
+                        description='I have used Unreal Engine for many years now, for both industry and personal projects. I become interested in the engnine when it became free in 2014, but did not fully begin working with it until 2016, after which I have been working with many companies while using it. I have used it for many different purposes, including:'
+                        list={[
+                            "At Figment Productions, working on immersive VR experiences for the company and for a BBC project",
+                            "At Sony Europe for Virtual Production project, along with Playstation usage",
+                            "With KYE for Jaws of Exctinction for technical art contract",
+                            "In University of Kent for project Skyward Bound",
+                            "Using it in spare time for personal projects"
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[VueJSIcon, PiniaIcon, PrismaIcon, NuxtJSIcon]} 
+                subjectName='VueJS Stack'
+                gridClassName='grid grid-cols-2 gap-4 place-items-center'
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[VueJSIcon, PiniaIcon, PrismaIcon, NuxtJSIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        title='VueJS Stack'
+                        description='I have worked with VueJS for a few years now, starting from my time at Figment Productions. My work with VueJS and its stack includes:'
+                        list={[
+                            "In Figment Productions for Automation and Deployment systems",
+                            "Building a Full Stack application with a team of 5 while leading for a healthy lifestyle app using VueJS, Bootstrap, Fastify, Prisma and PostgreSQL",
+                            "Building frontend for my Artifical Intelligence project in 'Natural Language Processing for Resume Parsing' as part of my dissertatoin at the University of Surrey"
+                        ]}
+                    />
+                )} 
+            />
         </div>
     );
 };
