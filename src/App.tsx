@@ -6,6 +6,8 @@ import Portfolio from './pages/Portfolio';
 
 import Navbar from './components/Navbar';
 
+import { OverlayProvider } from './components/OverlayContext';
+
 import './styles/main.scss';
 
 
@@ -28,10 +30,12 @@ function App() {
   };
 
   return (
-    <div className="App bg-bisque-900 text-bisque-100 p-6 flex flex-col">
-      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="content grow-[1] content-center relative">{renderPage()}</div>
-    </div>
+    <OverlayProvider>
+      <div className="App bg-bisque-900 text-bisque-100 p-6 flex flex-col">
+        <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        <div className="content grow-[1] content-center relative">{renderPage()}</div>
+      </div>
+    </OverlayProvider>
   );
 }
 
