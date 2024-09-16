@@ -10,7 +10,7 @@ interface TopicSingularProps {
 
 const TopicSingular: React.FC<TopicSingularProps> = ({ Icons, title = "", gridClassName= "", description = "", list = [] }) => {
     return (
-        <div className="text-bisque-100 p-12">
+        <div className="text-bisque-100 p-12 max-w-[960px]">
             <div className={gridClassName}>
                 {Icons.map((Icon, index) => (
                     <div key={index}>

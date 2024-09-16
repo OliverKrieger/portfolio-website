@@ -2,11 +2,6 @@ import React from 'react';
 
 import SubjectCard from './SubjectCard';
 
-import Games from '../../assets/icons/i_controller.svg?react';
-import Web from '../../assets/icons/i_web.svg?react';
-import DevOps from '../../assets/icons/i_devops.svg?react';
-import AI from '../../assets/icons/i_ai.svg?react';
-
 import CSSIcon from '../../assets/icons_code/i_css.svg?react';
 import CUDAIcon from '../../assets/icons_code/i_CUDA.svg?react';
 import DockerIcon from '../../assets/icons_code/i_docker.svg?react';
@@ -19,21 +14,19 @@ import JavaIcon from '../../assets/icons_code/i_java.svg?react';
 import JupyterNotebookIcon from '../../assets/icons_code/i_jnotebook.svg?react';
 import JavaScriptIcon from '../../assets/icons_code/i_js.svg?react';
 import NodeJSIcon from '../../assets/icons_code/i_node.svg?react';
-import NumpyIcon from '../../assets/icons_code/i_numpy.svg?react';
 import NuxtJSIcon from '../../assets/icons_code/i_nuxtjs.svg?react';
 import PiniaIcon from '../../assets/icons_code/i_pinia.svg?react';
 import PostgreSQLIcon from '../../assets/icons_code/i_postgresql.svg?react';
 import PrismaIcon from '../../assets/icons_code/i_prisma.svg?react';
 import PythonIcon from '../../assets/icons_code/i_python.svg?react';
 import PytorchIcon from '../../assets/icons_code/i_pytorch.svg?react';
-import ReactIconIcon from '../../assets/icons_code/i_react.svg?react';
+import ReactIcon from '../../assets/icons_code/i_react.svg?react';
 import SCSSIcon from '../../assets/icons_code/i_scss.svg?react';
 import SQLIcon from '../../assets/icons_code/i_sql.svg?react';
 import TailwindIcon from '../../assets/icons_code/i_tailwind.svg?react';
 import TypeScriptIcon from '../../assets/icons_code/i_ts.svg?react';
 import UnrealIcon from '../../assets/icons_code/i_unreal.svg?react';
 import ViteIcon from '../../assets/icons_code/i_vite.svg?react';
-import VRIcon from '../../assets/icons_code/i_vr.svg?react';
 import VueJSIcon from '../../assets/icons_code/i_vue.svg?react';
 
 import { useOverlay } from '../OverlayContext';
@@ -81,6 +74,156 @@ const Subjects: React.FC<SubjectsProps> = ({}) => {
                             "In Figment Productions for Automation and Deployment systems",
                             "Building a Full Stack application with a team of 5 while leading for a healthy lifestyle app using VueJS, Bootstrap, Fastify, Prisma and PostgreSQL",
                             "Building frontend for my Artifical Intelligence project in 'Natural Language Processing for Resume Parsing' as part of my dissertatoin at the University of Surrey"
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[PythonIcon, FlaskIcon, JupyterNotebookIcon]} 
+                subjectName='Python Stack' 
+                gridClassName='grid grid-cols-2 gap-4 place-items-center'
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[PythonIcon, FlaskIcon, JupyterNotebookIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        title='Python Stack'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[PytorchIcon]} 
+                subjectName='Artificial Intelligence' 
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[PytorchIcon]}
+                        title='Artificial Intelligence'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[ReactIcon]} 
+                subjectName='React' 
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[ReactIcon]}
+                        title='React'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[HTMLIcon, CSSIcon, SCSSIcon, TailwindIcon]} 
+                subjectName='Frontend Design Stack' 
+                gridClassName='grid grid-cols-2 gap-4 place-items-center'
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[HTMLIcon, CSSIcon, SCSSIcon, TailwindIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        title='Frontend Design Stack'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[JavaScriptIcon, TypeScriptIcon, NodeJSIcon]} 
+                subjectName='Frontend Stack' 
+                gridClassName='grid grid-cols-2 gap-4 place-items-center'
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[JavaScriptIcon, TypeScriptIcon, NodeJSIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        title='Frontend Design Stack'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[NodeJSIcon, ViteIcon, PostgreSQLIcon, SQLIcon]} 
+                subjectName='Full Stack' 
+                gridClassName='grid grid-cols-2 gap-4 place-items-center'
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[NodeJSIcon, ViteIcon, PostgreSQLIcon, SQLIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        title='Frontend Design Stack'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[GitIcon, GitlabIcon, DockerIcon]} 
+                subjectName='CI/CD' 
+                gridClassName='grid grid-cols-2 gap-4 place-items-center'
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[GitIcon, GitlabIcon, DockerIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        title='CI/CD'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[CUDAIcon]} 
+                subjectName='CUDA' 
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[CUDAIcon]}
+                        title='CUDA'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[ElectronIcon]} 
+                subjectName='Electron' 
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[ElectronIcon]}
+                        title='Electron'
+                        description=''
+                        list={[
+                            ""
+                        ]}
+                    />
+                )} 
+            />
+            <SubjectCard 
+                Icons={[JavaIcon]} 
+                subjectName='Java' 
+                onClick={() => openOverlay(
+                    <TopicSingular 
+                        Icons={[JavaIcon]}
+                        title='Java'
+                        description=''
+                        list={[
+                            ""
                         ]}
                     />
                 )} 
