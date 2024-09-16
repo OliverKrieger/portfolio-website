@@ -6,7 +6,7 @@ interface ProjectsProps{
 
 const Projects: React.FC<ProjectsProps> = ({}) => {
     return(
-        <div>
+        <div className="animate-slideInLeft">
             <h1>Projects</h1>
         </div>
     );

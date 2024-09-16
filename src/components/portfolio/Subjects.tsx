@@ -48,7 +48,7 @@ const Subjects: React.FC<SubjectsProps> = ({}) => {
     const { openOverlay } = useOverlay();
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center h-full">
+        <div className="animate-slideInLeft grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center h-full">
             <SubjectCard Icon={UnrealIcon} iconClassName="w-12 h-12 text-white-100" subjectName='Unreal Engine' onClick={() => openOverlay(
                 <TopicSingular 
                     Icon={UnrealIcon}
