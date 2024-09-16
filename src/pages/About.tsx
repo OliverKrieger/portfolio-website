@@ -6,8 +6,8 @@ const About: React.FC = () => {
     return (
         <div className="text-center animate-slideInLeft">
             <div className="flex items-stretch lg:items-center flex-col lg:flex-row p-6 bg-bisque-850 rounded-t-lg">
-                <div className="flex-1 min-h-[256px] lg:min-h-[448px] ring mx-8 p-2 ring-bisque-500 ring-offset-8 dark:ring-offset-slate-900 rounded-lg overflow-hidden relative">
-                    <img className="absolute top-24 left-1/2 transform -translate-x-1/2 scale-[1.7]" src={aboutPortrait} />
+                <div className="flex-1 min-h-[185px] sm:min-h-[256px] md:min-h-[338px] lg:min-h-[448px] ring mx-8 p-2 ring-bisque-500 ring-offset-8 dark:ring-offset-slate-900 rounded-lg overflow-hidden relative">
+                    <img className="absolute max-h-full max-w-none top-0 lg:top-16 left-1/2 transform -translate-x-1/2 scale-[1.7]" src={aboutPortrait} />
                 </div>
                 <div className="flex-1 text-left p-6">
                     <h2 className="text-lg uppercase text-bisque-300">Hi, my name is</h2>

@@ -25,16 +25,16 @@ const Portfolio: React.FC = () => {
     };
 
     return (
-        <div className="animate-slideInLeft h-full">
-            <div className="flex">
-                <div className="flex-none bg-slate-800 w-24">
+        <div className="animate-slideInLeft h-full w-full absolute top-0">
+            <div className="flex flex-col md:flex-row h-full">
+                <div className="flex flex-row md:flex-col items-center justify-center w-full md:w-24 bg-slate-800">
                     <CodeIcon className="w-12 h-12 text-bisque-500"/>
                     <ProjectIcon className="w-12 h-12 text-bisque-500"/>
                 </div>
                 <div className="flex-1 bg-slate-400">
                     {renderPage()}
                 </div>
-                <div className="flex-none bg-slate-800 w-24">
+                <div className="bg-slate-800 w-24">
 
                 </div>
             </div>
