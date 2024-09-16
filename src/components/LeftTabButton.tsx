@@ -9,7 +9,7 @@ interface LeftTabButtonProps{
 
 const LeftTabButton: React.FC<LeftTabButtonProps> = ({Icon, text="", setActiveTab, tab}) => {
     return(
-        <button onClick={() => setActiveTab(tab)} className="w-20 h-20 flex flex-col items-center border-bisque-500 border-2 p-1 m-2 rounded text-bisque-500 hover:bg-bisque-500 hover:text-bisque-100 transition-all ease-in-out">
+        <button onClick={() => setActiveTab(tab)} className="w-20 h-20 flex flex-col items-center border-bisque-400 border-2 p-1 m-2 rounded text-bisque-400 hover:bg-bisque-400 hover:text-bisque-100 transition-all ease-in-out">
             <Icon className="w-16 h-16"/>
             <p>{text}</p>
         </button>
