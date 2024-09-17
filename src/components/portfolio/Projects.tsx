@@ -24,11 +24,11 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
     const { openOverlay } = useOverlay();
 
     return (
-        <div className="animate-slideInLeft grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center h-full p-4">
+        <div className="animate-slideInLeft grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-full p-4">
             <ProjectCard
                 img={HelixImg}
                 title='Helix'
-                tags={["Unreal Engine", "C++", "VR", "VueJS", "Docker", "Kubernetes", "Gitlab"]}
+                tags={["Unreal Engine", "C++", "VR", "VueJS", "NodeJS", "Docker", "Kubernetes", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Helix'
