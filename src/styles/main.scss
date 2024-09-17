@@ -20,3 +20,27 @@ body,
     text-shadow: 0 5px 0px rgba(255, 255, 255, 0.25);
     /* Blue shadow */
 }
+
+.scrollbar-light::-webkit-scrollbar {
+    width: 8px;
+    scrollbar-gutter: stable;
+}
+
+.scrollbar-light::-webkit-scrollbar-track {
+    background: #555;
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb {
+    background-color: #888;
+    // border-radius: 4px;
+}
+
+.dark .scrollbar-light::-webkit-scrollbar-track {
+    background: #2d3748;
+    /* Dark background */
+}
+
+.dark .scrollbar-light::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    /* Dark scrollbar thumb */
+}

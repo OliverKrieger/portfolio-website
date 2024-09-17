@@ -31,7 +31,7 @@ function App() {
 
   return (
     <OverlayProvider>
-      <div className="App bg-bisque-900 text-bisque-100 p-6 flex flex-col">
+      <div className="App bg-bisque-900 text-bisque-100 p-6 flex flex-col overflow-auto scrollbar-light">
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className="content grow-[1] content-center relative">{renderPage()}</div>
       </div>

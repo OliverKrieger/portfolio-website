@@ -24,13 +24,13 @@ const Portfolio: React.FC = () => {
     };
 
     return (
-        <div className="animate-slideInLeft h-full w-full absolute top-0">
-            <div className="flex flex-col md:flex-row h-full">
+        <div className="animate-slideInLeft min-h-full w-full absolute top-0">
+            <div className="flex flex-col md:flex-row min-h-full">
                 <div className="flex flex-row md:flex-col items-center justify-center w-full md:w-24">
                     <LeftTabButton Icon={CodeIcon} setActiveTab={setActiveTab} text='Code' tab='subjects' />
                     <LeftTabButton Icon={ProjectIcon} setActiveTab={setActiveTab} text='Projects' tab='projects' />
                 </div>
-                <div className="flex-1 bg-bisque-850 rounded">
+                <div className="flex-1 bg-bisque-850 rounded mx-6 mb-6">
                     {renderPage()}
                 </div>
                 <div className="w-24">
