@@ -9,11 +9,11 @@ interface ProjectCardProps{
 
 const ProjectCard: React.FC<ProjectCardProps> = ({img, title="", tags=[], onClick}) => {
     return(
-        <div className="text-center" onClick={onClick}>
+        <div className="text-center cursor-pointer px-2 pt-4 pb-2 transition-all ease-in-out hover:bg-bisque-900" onClick={onClick}>
             <img src={img} className="m-auto" />
             <h1 className="my-4 text-xl">{title}</h1>
             {tags.map((tag, index) => (
-                <span key={index} className={`${tag} rounded py-1 px-2 inline-block`}>
+                <span key={index} className={`${tag} rounded py-1 px-2 inline-block m-1`}>
                     {tag}
                 </span>
             ))}
