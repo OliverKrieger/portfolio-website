@@ -13,8 +13,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({img, title="", tags=[], onClic
             <img src={img} />
             <h1>{title}</h1>
             {tags.map((tag, index) => (
-                <span key={index}>
-                    <span>{tag}</span>
+                <span key={index} className={`${tag} rounded py-1 px-2 inline-block`}>
+                    {tag}
                 </span>
             ))}
         </div>
