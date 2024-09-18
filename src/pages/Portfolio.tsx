@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
     return (
         <div className="animate-slideInLeft min-h-full w-full absolute top-0">
             <div className="flex flex-col md:flex-row min-h-full">
-                <div className="flex flex-row md:flex-col items-center justify-start w-full md:w-24">
+                <div className="flex flex-row md:flex-col items-center justify-center md:justify-start w-full md:w-24">
                     <LeftTabButton Icon={CodeIcon} setActiveTab={setActiveTab} text='Code' tab='subjects' />
                     <LeftTabButton Icon={ProjectIcon} setActiveTab={setActiveTab} text='Projects' tab='projects' />
                 </div>

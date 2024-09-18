@@ -40,7 +40,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={OddlyImg}
                 title='Oddly Satisfying'
-                tags={["Unreal Engine", "C++"]}
+                tags={["Unreal Engine", "C++", "Blender"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Oddly Satisfying'

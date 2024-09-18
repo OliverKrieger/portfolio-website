@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import { OverlayProvider } from './components/OverlayContext';
 
 import './styles/main.scss';
-
+import './styles/tagColours.scss';
 
 function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
