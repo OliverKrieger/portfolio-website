@@ -18,6 +18,7 @@ export default {
       },
       animation: {
         slideInLeft: 'slideInLeft 0.5s ease-out',
+        fadeIn: 'fadeIn 0.5s ease-out'
       },
       colors: {
         bisque: {

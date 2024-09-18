@@ -42,7 +42,7 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
     const { openOverlay } = useOverlay();
 
     return (
-        <div className="animate-slideInLeft grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center h-full p-4">
+        <div className="animate-fadeIn grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center h-full p-4">
             <SubjectCard
                 Icons={[UnrealIcon]}
                 iconClassName="w-12 h-12 text-white-100"

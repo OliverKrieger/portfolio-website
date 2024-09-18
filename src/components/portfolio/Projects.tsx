@@ -24,7 +24,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
     const { openOverlay } = useOverlay();
 
     return (
-        <div className="animate-slideInLeft grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-full p-4">
+        <div className="animate-fadeIn grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-full p-4">
             <ProjectCard
                 img={HelixImg}
                 title='Helix'
@@ -117,7 +117,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={FYPImg}
                 title='Natural Language Processing for Resume Parsing Using Labelling'
-                tags={["Python", "PyTorch", "VueJS", "Electron"]}
+                tags={["Python", "PyTorch", "VueJS", "TypeScript", "WebSockets", "Electron"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Natural Language Processing for Resume Parsing Using Labelling'
