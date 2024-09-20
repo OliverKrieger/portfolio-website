@@ -109,7 +109,8 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                             "Gitlab during the Eternal Divide and Skyward Bound projects",
                             "Gitlab, Docker and Kubernetes while working at Figment Productions as well as Git commands and Github for separate projects",
                             "Gitlab, Github, Git and Docker while working on various projects at the University of Surrey",
-                            "Gitlab, Github and Jenkins while at Sony Europe"
+                            "Gitlab, Github and Jenkins while at Sony Europe",
+                            "Git and Github for personal projects"
                         ]}
                     />
                 )}
