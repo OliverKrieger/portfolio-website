@@ -57,3 +57,21 @@ URL: https://oliverkrieger.github.io/portfolio-website/
 
 SVG Visualiser: https://www.svgviewer.dev/
 Tailwind Colour Generator: https://uicolors.app/create
+
+# Running
+
+Built from vite react typescript template:
+`yarn create vite my-react-app --template react-ts`
+
+Github deploy added via:
+`yarn add gh-pages --dev`
+
+Added tailwind via:
+`yarn add tailwindcss postcss autoprefixer --dev`
+`npx tailwindcss init`
+
+To run in develop mode:
+`yarn dev`
+
+To build and deploy:
+`yarn build-and-deploy`
