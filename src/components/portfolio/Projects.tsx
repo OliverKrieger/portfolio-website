@@ -40,7 +40,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={OddlyImg}
                 title='Oddly Satisfying'
-                tags={["Unreal Engine", "C++", "Blender"]}
+                tags={["Unreal Engine", "C++", "VR", "Blender", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Oddly Satisfying'
@@ -51,7 +51,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={SkywardImg}
                 title='Skyward Bound'
-                tags={["Unreal Engine", "C++", "Maya"]}
+                tags={["Unreal Engine", "C++", "Maya", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Skyward Bound'
@@ -62,7 +62,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={EternalImg}
                 title='Eternal Divide'
-                tags={["Unity", "C#", "Maya"]}
+                tags={["Unity", "C#", "Maya", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Eternal Divide'
@@ -84,7 +84,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={HealtifyImg}
                 title='Healtify'
-                tags={["VueJS", "HTML", "SCSS", "CSS", "JavaScript", "Prisma", "PostgreSQL"]}
+                tags={["VueJS", "HTML", "SCSS", "CSS", "JavaScript", "Prisma", "PostgreSQL", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Healtify'
@@ -95,7 +95,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={OSVPImg}
                 title='OSVP'
-                tags={["Unreal Engine", "C++", "Python", "VR", "Playstation"]}
+                tags={["Unreal Engine", "C++", "Python", "VR", "Playstation", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='OSVP'
@@ -106,7 +106,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={M2LiveImg}
                 title='M2Live'
-                tags={["C++", "CUDA", "React", "Python"]}
+                tags={["C++", "CUDA", "React", "Python", "Gitlab"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='M2Live'
@@ -117,7 +117,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={FYPImg}
                 title='Natural Language Processing for Resume Parsing Using Labelling'
-                tags={["Python", "PyTorch", "VueJS", "TypeScript", "WebSockets", "Electron"]}
+                tags={["Python", "PyTorch", "VueJS", "TypeScript", "WebSockets", "Electron", "Github"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Natural Language Processing for Resume Parsing Using Labelling'

@@ -69,9 +69,12 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[CPlusIcon]}
                         title='C++'
-                        description=''
+                        description='Due to having worked with unreal engine for a long time, I have also been working with C++. This includes:'
                         list={[
-                            ""
+                            "Using it during the Helix and Oddly Satisfying projects while working at Figment Productions",
+                            "Using C++ while working for Sony Europe for both, developing virtual production tools and while working on video processing with CUDA",
+                            "In University of Kent for an encryption project",
+                            "Personal projects"
                         ]}
                     />
                 )}
@@ -83,9 +86,10 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[CUDAIcon]}
                         title='CUDA'
-                        description=''
+                        description='While I have not developed with CUDA as long as I have with C++, I have had experience with it, both in a university setting and commercial. This includes:'
                         list={[
-                            ""
+                            "Used while working at Sony Europe for video processing",
+                            "Completing parallel computing course"
                         ]}
                     />
                 )}
@@ -97,11 +101,15 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                 onClick={() => openOverlay(
                     <TopicSingular
                         Icons={[GitIcon, GitlabIcon, DockerIcon]}
-                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        gridClassName='grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center'
                         title='CI/CD'
-                        description=''
+                        description='The various tools that are required for CI/CD, I have used extensively across the years. This includes:'
                         list={[
-                            ""
+                            "Sourcetree and BitBucket during my time in Sagittarius Marketing, proper staging and production environments",
+                            "Gitlab during the Eternal Divide and Skyward Bound projects",
+                            "Gitlab, Docker and Kubernetes while working at Figment Productions as well as Git commands and Github for separate projects",
+                            "Gitlab, Github, Git and Docker while working on various projects at the University of Surrey",
+                            "Gitlab, Github and Jenkins while at Sony Europe"
                         ]}
                     />
                 )}
@@ -115,7 +123,10 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                         Icons={[VueJSIcon, PiniaIcon, PrismaIcon, NuxtJSIcon]}
                         gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
                         title='VueJS Stack'
-                        description='I have worked with VueJS for a few years now, starting from my time at Figment Productions. My work with VueJS and its stack includes:'
+                        description='I have worked with VueJS for a few years now, starting from my time at Figment Productions. 
+                            Vue was somewhat of a passion framework for me, as a lot of companies ended up leaning towards React or Angular, 
+                            but in a lot of my own projects I did end up using Vue, as it felt quite lightweight, while still having good integration. 
+                            My work with VueJS and its stack includes:'
                         list={[
                             "In Figment Productions for Automation and Deployment systems",
                             "Building a Full Stack application with a team of 5 while leading for a healthy lifestyle app using VueJS, Bootstrap, Fastify, Prisma and PostgreSQL",
@@ -131,9 +142,13 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[ReactIcon]}
                         title='React'
-                        description=''
+                        description='While having worked with VueJS, it was quite straightforward to pick up React, as the two frameworks share a
+                            lot of similarity. I have worked with React in both university setting and commercially. This includes:'
                         list={[
-                            ""
+                            "Internal applications at Figment Productions",
+                            "Projects at the University of Surrey",
+                            "Internal visualisation for internal systems at Sony Europe",
+                            "Personal website projects"
                         ]}
                     />
                 )}
@@ -147,25 +162,37 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                         Icons={[HTMLIcon, CSSIcon, SCSSIcon, TailwindIcon]}
                         gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
                         title='Frontend Design Stack'
-                        description=''
+                        description='As I originally also have a background in Multimedia Technology and Design, I have achieved a formal recognition 
+                            for the ability to design and style web based coding languages. I try to keep up with the latest trends and stacks, originally
+                            starting from using Foundations, then Bootstrap and now lately adopting Tailwind. While having both university and commercial experience,
+                            my work with the frontend stack includes:'
                         list={[
-                            ""
+                            "For a variety of projects during the time at University of Kent",
+                            "Extensively used during my time at Sagittarius Marketing for a variety of website modifications and client requests. This included use of HTML, CSS and SCSS, JavaScript and Sitecore",
+                            "Internal systems design at Figment Productions",
+                            "Variety of projects during my time at University of Surrey",
+                            "Internal projects at Sony Europe"
                         ]}
                     />
                 )}
             />
             <SubjectCard
-                Icons={[JavaScriptIcon, TypeScriptIcon, NodeJSIcon]}
+                Icons={[JavaScriptIcon, TypeScriptIcon]}
                 subjectName='Frontend Stack'
                 gridClassName='grid grid-cols-2 gap-4 place-items-center'
                 onClick={() => openOverlay(
                     <TopicSingular
-                        Icons={[JavaScriptIcon, TypeScriptIcon, NodeJSIcon]}
-                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
-                        title='Frontend Design Stack'
-                        description=''
+                        Icons={[JavaScriptIcon, TypeScriptIcon]}
+                        gridClassName='grid grid-cols-2 md:grid-cols-2 gap-4 place-items-center'
+                        title='Frontend Stack'
+                        description='Having been involved across many commercial and personal projects over the years, I have quite a bit of 
+                            experience with JavaScript and TypeScript.'
                         list={[
-                            ""
+                            "Various web projects using JavaScript in University of Kent",
+                            "Used JavaScript to build frontend for websites in Sagittarius Marketing",
+                            "Used JavaScript and TypeScript for various internal projects, including using RESTful APIs",
+                            "Used TypeScript for a variety of projects in Univeristy of Surrey, both for web and applications",
+                            "Used TypeScript for internal system projects at Sony Europe"
                         ]}
                     />
                 )}
@@ -178,10 +205,13 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[NodeJSIcon, ViteIcon, PostgreSQLIcon, SQLIcon]}
                         gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
-                        title='Frontend Design Stack'
-                        description=''
+                        title='Frontend Stack'
+                        description='In order to develop full stack applications and websites I have used a variety of frameworks and systems. This includes:'
                         list={[
-                            ""
+                            "Using SQL based databses during my time at University of Kent",
+                            "Using NodeJS and SQL based databases during my time in Sagittarius Marketing",
+                            "Using NodeJS, Express, Websockets, MongoDB and Postman during my time in Figment Productions",
+                            "Using SQL based Databases, Fastify, NodeJS, Vite and PostgreSQL during my studies at University of Surrey"
                         ]}
                     />
                 )}
@@ -193,25 +223,31 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[ElectronIcon]}
                         title='Electron'
-                        description=''
+                        description='For building applications that could run both on a webserver and locally, I have used Electron as my main
+                            platform of choice. This includes using it for:'
                         list={[
-                            ""
+                            "Internal applications and visualisation of project data at Figment Productions",
+                            "For final year project relating to AI for visualisation and interaction",
+                            "A number of personal projects, including data generators and visualisers"
                         ]}
                     />
                 )}
             />
-                        <SubjectCard
+            <SubjectCard
                 Icons={[PythonIcon, FlaskIcon, JupyterNotebookIcon]}
                 subjectName='Python Stack'
                 gridClassName='grid grid-cols-2 gap-4 place-items-center'
                 onClick={() => openOverlay(
                     <TopicSingular
                         Icons={[PythonIcon, FlaskIcon, JupyterNotebookIcon]}
-                        gridClassName='grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center'
+                        gridClassName='grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center'
                         title='Python Stack'
-                        description=''
+                        description='Since my time in University of Surrey and afterwards, I have used python and its subsequent libraries for a 
+                            variety of tasks including, but not limited to, data manipulation, visualisation and processing. This includes:'
                         list={[
-                            ""
+                            "In University of Surrey for data analysis and artificial intelligence projects, including the use of Python, JupyterNotebooks, Flask, Numpy, MatplotLib and SciKit",
+                            "For Automation, image processing and testing while at Sony Europe",
+                            "For backend systems and data manipulation in personal projects"
                         ]}
                     />
                 )}
@@ -223,9 +259,13 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[PytorchIcon]}
                         title='Artificial Intelligence'
-                        description=''
+                        description='During the time at the University I completed 3 separate modules on Artifical Intelligence and have been looking
+                            into other wise AI could be implemented into future projects. Projects I have worked on are as following:'
                         list={[
-                            ""
+                            "Using Tensorflow to build cell recognition AI",
+                            "Researching and using PyTorch to build basis for recognition of brain signals using EEG (electroencephalogram) to measure participants mood and motor functions",
+                            "Using PyTorch with Natural Language Processing to recognise abbreviations for given words using SpaCy and BERT",
+                            "Using PyTorch with Natural Language Processing to recognise labels like 'Work Experience' and 'Years of Experience' with SpaCy and BERT and using a mix of rule based and word vector (FastText) ranking to recognise resume similarity to job description"
                         ]}
                     />
                 )}
@@ -237,9 +277,11 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[JavaIcon]}
                         title='Java'
-                        description=''
+                        description='During my years in computer science I have worked with Java. Because of having already worked with C++ for a number of years, I have the OOP fundamentals down, so I have never found using Java too difficult or dissimilar. My interactions with include:'
                         list={[
-                            ""
+                            "During my degree in University of Kent to build a small Android application",
+                            "Programming Fundamentals at the University of Surrey",
+                            "Computer Security module for encryption tests using Java encryption libraries"
                         ]}
                     />
                 )}
@@ -251,9 +293,11 @@ const Subjects: React.FC<SubjectsProps> = ({ }) => {
                     <TopicSingular
                         Icons={[CSharpIcon]}
                         title='C#'
-                        description=''
+                        description='Similarly to C++, without the pointers and having to handle memory excplicitly, I have had to use C# for a number of projects over the years, though not as extensively as C++. This includes:'
                         list={[
-                            ""
+                            "During my time in Sagittarius Marketing for adjustments to backend that used IIS (Internet Information Services) and MVC (Model View Controller) pipeline for Sitecore and Umbraco websites",
+                            "At Figment Productions for small windows applications to help run internal systems and for brief encounters with Unity",
+                            "For Unreal automation tool"
                         ]}
                     />
                 )}
