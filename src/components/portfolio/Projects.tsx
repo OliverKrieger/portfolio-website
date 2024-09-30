@@ -15,6 +15,7 @@ import HealtifyImg from "../../assets/project_imgs/Healthify.jpg";
 import OSVPImg from "../../assets/project_imgs/OSVP.jpg";
 import M2LiveImg from "../../assets/project_imgs/M2Live.jpg";
 import FYPImg from "../../assets/project_imgs/FYP.jpg";
+import PersonalWebProjImg from "../../assets/project_imgs/PersonalWebProjects.jpg";
 
 import FYPProject from "../../assets/projects/FYP_Report.pdf";
 
@@ -31,7 +32,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
             <ProjectCard
                 img={HelixImg}
                 title='Helix'
-                tags={["Unreal Engine", "C++", "VR", "VueJS", "NodeJS", "Docker", "Kubernetes", "Gitlab"]}
+                tags={["Unreal Engine", "C++", "VR", "VueJS", "NodeJS", "Docker", "Kubernetes", "Gitlab", "C#"]}
                 onClick={() => openOverlay(
                     <TopicProjects
                         title='Helix'
@@ -45,6 +46,68 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                             animation system that tried to mimic speed and movement of the users depending on the data captured from previous runs (think early days of motion matching). 
                             During the time there I got to work with headsets like MSVR, Vive and Vive Pro and Quest.'
                         links={["https://figmentproductions.co.uk/index.php/pf/helix/"]}
+                    />
+                )}
+            />
+            <ProjectCard
+                img={HealtifyImg}
+                title='Healtify'
+                tags={["VueJS", "HTML", "SCSS", "CSS", "JavaScript", "Prisma", "PostgreSQL", "Docker", "Gitlab"]}
+                onClick={() => openOverlay(
+                    <TopicProjects
+                        title='Healtify'
+                        description='The Healtify project was a end of second year project and involved working with 4 other people to build and
+                            develop a full stack application with 4 microservices. During the project, I both led the team and managed the main
+                            bulk of coding, including setting up the technical stack with Vue, Prisma and PostgreSQL, building the main structure 
+                            of the project, building the backend implementation for Prisma and PostgreSQL and building 2 of the 4 microservices (
+                            google maps API and a real time connection update using websockets to give user reminders). I also implemented user 
+                            logins and designed most of the pages.'
+                    />
+                )}
+            />
+            <ProjectCard
+                img={FYPImg}
+                title='Natural Language Processing for Resume Parsing Using Labelling'
+                tags={["Python", "PyTorch", "AI", "VueJS", "TypeScript", "Vite", "WebSockets", "Electron", "Github"]}
+                onClick={() => openOverlay(
+                    <TopicProjects
+                        title='Natural Language Processing for Resume Parsing Using Labelling'
+                        description='My final year project at the University of Surrey was Natural Language Processing for Resume Parsing Using 
+                            Labelling. While the title is long, it did have many parts, mostly focus on artifical intelligence. The idea was to 
+                            take a number of job descriptions and a number of resumes and match the best matching resumes to the best matching 
+                            job descriptions. The project tackled generating data and used Python and Pytorch for the AI and VueJS, TypeScript, 
+                            WebSockets and Electron to visualise the project and the data manipulation as well as Jupyter Notebooks for smaller 
+                            visualisations and data accuracy.'
+                        downloadables={[[FYPProject, "Final Year Project"]]}
+                    />
+                )}
+            />
+            <ProjectCard
+                img={OSVPImg}
+                title='OSVP'
+                tags={["Unreal Engine", "C++", "Python", "VR", "Playstation", "Gitlab"]}
+                onClick={() => openOverlay(
+                    <TopicProjects
+                        title='OSVP'
+                        description='During my time in Sony I worked on 3 projects, 2 of which were related to OSVP. OSVP was a virtual production
+                            project developed in Unreal Engine. On the project, I worked with building internal systems inside of unreal, test 
+                            automation, bringing the project to Playstation, user interface and virtual reality tracking using Vive motion trackers.
+                            I also worked with unreals render pipeline.'
+                    />
+                )}
+            />
+            <ProjectCard
+                img={M2LiveImg}
+                title='M2Live'
+                tags={["C++", "CUDA", "React", "Python", "Gitlab"]}
+                onClick={() => openOverlay(
+                    <TopicProjects
+                        title='M2Live'
+                        description='The M2Live Image Processing project was the final project I worked on during my time in Sony and involved 
+                            working with CUDA and as the name suggests, image processing. I implemented controls to adjust video parameters and 
+                            build a colour matching system based on histogram matching using cumulative distribution function. The project also
+                            had a react frontend and python testing system, both of which I would interact with while working on the project and
+                            add functionality to them.'
                     />
                 )}
             />
@@ -96,21 +159,6 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={PersonalProjImg}
-                title='Personal Projects'
-                tags={["Unreal Engine", "C++", "Blender", "Github", "SDL"]}
-                onClick={() => openOverlay(
-                    <TopicProjects
-                        title='Personal Projects'
-                        videos={["https://www.youtube.com/embed/LawG2yUxJOU?si=en01VTAMul9ct2Op"]}
-                        description='Over the years, on the side of work and other commitments, I have still tried to keep up with a variety of
-                            game develolpment. There have been projects and systems I have just built for fun to test out new releases of unreal 
-                            engine, as well as to either showcase something or build something functional to assist me in a specific task. These 
-                            project range from using Unreal Engine and C++ to testing out C++ in SDL and more.'
-                    />
-                )}
-            />
-            <ProjectCard
                 img={JoEImg}
                 title='Jaws of Extinction'
                 tags={["Unreal Engine", "C++", "Blender"]}
@@ -125,64 +173,30 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={HealtifyImg}
-                title='Healtify'
-                tags={["VueJS", "HTML", "SCSS", "CSS", "JavaScript", "Prisma", "PostgreSQL", "Gitlab"]}
+                img={PersonalProjImg}
+                title='Personal Game Projects'
+                tags={["Unreal Engine", "C++", "Blender", "Github", "SDL"]}
                 onClick={() => openOverlay(
                     <TopicProjects
-                        title='Healtify'
-                        description='The Healtify project was a end of second year project and involved working with 4 other people to build and
-                            develop a full stack application with 4 microservices. During the project, I both led the team and managed the main
-                            bulk of coding, including setting up the technical stack with Vue, Prisma and PostgreSQL, building the main structure 
-                            of the project, building the backend implementation for Prisma and PostgreSQL and building 2 of the 4 microservices (
-                            google maps API and a real time connection update using websockets to give user reminders). I also implemented user 
-                            logins and designed most of the pages.'
+                        title='Personal Game Projects'
+                        videos={["https://www.youtube.com/embed/LawG2yUxJOU?si=en01VTAMul9ct2Op"]}
+                        description='Over the years, on the side of work and other commitments, I have still tried to keep up with a variety of
+                            game develolpment. There have been projects and systems I have just built for fun to test out new releases of unreal 
+                            engine, as well as to either showcase something or build something functional to assist me in a specific task. These 
+                            project range from using Unreal Engine and C++ to testing out C++ in SDL and more.'
                     />
                 )}
             />
             <ProjectCard
-                img={OSVPImg}
-                title='OSVP'
-                tags={["Unreal Engine", "C++", "Python", "VR", "Playstation", "Gitlab"]}
+                img={PersonalWebProjImg}
+                title='Personal Web Projects'
+                tags={["React", "VueJS", "JavaScript", "TypeScript", "Python", "Vite", "WebSockets", "Express", "NodeJS", "Tailwind", "HTML", "CSS", "SCSS", "Github", "Wordpress", "PHP"]}
                 onClick={() => openOverlay(
                     <TopicProjects
-                        title='OSVP'
-                        description='During my time in Sony I worked on 3 projects, 2 of which were related to OSVP. OSVP was a virtual production
-                            project developed in Unreal Engine. On the project, I worked with building internal systems inside of unreal, test 
-                            automation, bringing the project to Playstation, user interface and virtual reality tracking using Vive motion trackers.
-                            I also worked with unreals render pipeline.'
-                    />
-                )}
-            />
-            <ProjectCard
-                img={M2LiveImg}
-                title='M2Live'
-                tags={["C++", "CUDA", "React", "Python", "Gitlab"]}
-                onClick={() => openOverlay(
-                    <TopicProjects
-                        title='M2Live'
-                        description='The M2Live Image Processing project was the final project I worked on during my time in Sony and involved 
-                            working with CUDA and as the name suggests, image processing. I implemented controls to adjust video parameters and 
-                            build a colour matching system based on histogram matching using cumulative distribution function. The project also
-                            had a react frontend and python testing system, both of which I would interact with while working on the project and
-                            add functionality to them.'
-                    />
-                )}
-            />
-            <ProjectCard
-                img={FYPImg}
-                title='Natural Language Processing for Resume Parsing Using Labelling'
-                tags={["Python", "PyTorch", "VueJS", "TypeScript", "WebSockets", "Electron", "Github"]}
-                onClick={() => openOverlay(
-                    <TopicProjects
-                        title='Natural Language Processing for Resume Parsing Using Labelling'
-                        description='My final year project at the University of Surrey was Natural Language Processing for Resume Parsing Using 
-                            Labelling. While the title is long, it did have many parts, mostly focus on artifical intelligence. The idea was to 
-                            take a number of job descriptions and a number of resumes and match the best matching resumes to the best matching 
-                            job descriptions. The project tackled generating data and used Python and Pytorch for the AI and VueJS, TypeScript, 
-                            WebSockets and Electron to visualise the project and the data manipulation as well as Jupyter Notebooks for smaller 
-                            visualisations and data accuracy.'
-                        downloadables={[[FYPProject, "Final Year Project"]]}
+                        title='Personal Web Projects'
+                        description='As part of work and building small applications, I have had experience with a number of web technologies, 
+                            both for frontend and backend. These range from designing frontend for websites, web APIs for user data updates, 
+                            data parsers and generators, web scrapers and more.'
                     />
                 )}
             />
