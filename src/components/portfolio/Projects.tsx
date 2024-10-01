@@ -30,7 +30,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
     return (
         <div className="animate-fadeIn grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-full p-4">
             <ProjectCard
-                img={HelixImg}
+                imgSrc={HelixImg}
                 title='Helix'
                 tags={["Unreal Engine", "C++", "VR", "VueJS", "NodeJS", "Docker", "Kubernetes", "Gitlab", "C#"]}
                 onClick={() => openOverlay(
@@ -50,7 +50,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={HealtifyImg}
+                imgSrc={HealtifyImg}
                 title='Healtify'
                 tags={["VueJS", "HTML", "SCSS", "CSS", "JavaScript", "Prisma", "PostgreSQL", "Docker", "Gitlab"]}
                 onClick={() => openOverlay(
@@ -66,7 +66,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={FYPImg}
+                imgSrc={FYPImg}
                 title='Natural Language Processing for Resume Parsing Using Labelling'
                 tags={["Python", "PyTorch", "AI", "VueJS", "TypeScript", "Vite", "WebSockets", "Electron", "Github"]}
                 onClick={() => openOverlay(
@@ -83,7 +83,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={OSVPImg}
+                imgSrc={OSVPImg}
                 title='OSVP'
                 tags={["Unreal Engine", "C++", "Python", "VR", "Playstation", "Gitlab"]}
                 onClick={() => openOverlay(
@@ -97,7 +97,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={M2LiveImg}
+                imgSrc={M2LiveImg}
                 title='M2Live'
                 tags={["C++", "CUDA", "React", "Python", "Gitlab"]}
                 onClick={() => openOverlay(
@@ -112,7 +112,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={OddlyImg}
+                imgSrc={OddlyImg}
                 title='Oddly Satisfying'
                 tags={["Unreal Engine", "C++", "VR", "Blender", "Gitlab"]}
                 onClick={() => openOverlay(
@@ -128,7 +128,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={SkywardImg}
+                imgSrc={SkywardImg}
                 title='Skyward Bound'
                 tags={["Unreal Engine", "C++", "Maya", "Gitlab"]}
                 onClick={() => openOverlay(
@@ -144,7 +144,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={EternalImg}
+                imgSrc={EternalImg}
                 title='Eternal Divide'
                 tags={["Unity", "C#", "Maya", "Gitlab"]}
                 onClick={() => openOverlay(
@@ -159,7 +159,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={JoEImg}
+                imgSrc={JoEImg}
                 title='Jaws of Extinction'
                 tags={["Unreal Engine", "C++", "Blender"]}
                 onClick={() => openOverlay(
@@ -173,7 +173,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={PersonalProjImg}
+                imgSrc={PersonalProjImg}
                 title='Personal Game Projects'
                 tags={["Unreal Engine", "C++", "Blender", "Github", "SDL"]}
                 onClick={() => openOverlay(
@@ -188,7 +188,7 @@ const Projects: React.FC<ProjectsProps> = ({ }) => {
                 )}
             />
             <ProjectCard
-                img={PersonalWebProjImg}
+                imgSrc={PersonalWebProjImg}
                 title='Personal Web Projects'
                 tags={["React", "VueJS", "JavaScript", "TypeScript", "Python", "Vite", "WebSockets", "Express", "NodeJS", "Tailwind", "HTML", "CSS", "SCSS", "Github", "Wordpress", "PHP"]}
                 onClick={() => openOverlay(
